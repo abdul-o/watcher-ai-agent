@@ -12,6 +12,11 @@ import { watchmanAgent } from "./agents/watchman-agent";
 
 export const mastra = new Mastra({
 
+bundler: {
+        externals: ["axios"],
+    },
+
+
     // Removed: workflows
     
     agents: {
