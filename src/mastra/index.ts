@@ -5,11 +5,13 @@ import { Mastra } from '@mastra/core/mastra';
 import { PinoLogger } from '@mastra/loggers';
 import { LibSQLStore } from '@mastra/libsql';
 
+
 // Import only your agent
 import { watchmanAgent } from "./agents/watchman-agent"; 
 
 
 export const mastra = new Mastra({
+
     // Removed: workflows
     
     agents: {
