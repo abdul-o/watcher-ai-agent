@@ -26,7 +26,6 @@ bundler: {
     
     // Removed: scorers
     
-    
     telemetry: {
         enabled: false, 
     },
