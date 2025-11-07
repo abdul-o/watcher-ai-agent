@@ -2,8 +2,8 @@
 // src/mastra/index.ts (CLEANED)
 
 import { Mastra } from '@mastra/core/mastra';
-import { PinoLogger } from '@mastra/loggers';
-import { LibSQLStore } from '@mastra/libsql';
+
+
 
 
 // Import only your agent
@@ -26,13 +26,7 @@ bundler: {
     
     // Removed: scorers
     
-    storage: new LibSQLStore({
-        url: ":memory:",
-    }),
-    logger: new PinoLogger({
-        name: 'Mastra',
-        level: 'info',
-    }),
+    
     telemetry: {
         enabled: false, 
     },
